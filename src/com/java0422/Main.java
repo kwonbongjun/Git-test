@@ -14,7 +14,7 @@ public class Main {
 		int 정수 = 1;
 		System.out.println(정수);
 		
-		String 결과값 = 문자열 + (정수 + 정수 + 정수);
+		String 결과값 = 문자열 + (정수 + 정수 + 정수d);
 		System.out.println(결과값);
 	}
 
