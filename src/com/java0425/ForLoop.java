@@ -229,7 +229,7 @@ public class ForLoop {
 	}
 
 	public void t12() { ///더해서 상수 나오게 해도됌
-		for(int i=0;i<11;i++) {
+		/*for(int i=0;i<11;i++) {
 			System.out.print("*");
 		if (i==0) System.out.print("*********");	
 		else if (i==5) System.out.print("*********");
@@ -271,8 +271,11 @@ public class ForLoop {
 				}
 		}	
 		System.out.println("*");
-	}
-	}
+	}	*/
+		/*if(i%5==0 || j%5==0 || i==j || i+j=10) {
+			
+		}*/
+}
 	
 	
 	public void t20() {
