@@ -1,21 +1,22 @@
-package com.java0422;
+/*package com.java0422;
 
 public class Main {
 
 	public static void main(String[] a) {
-		System.out.println("변수 시작!");
-		String 문자열 = "Hello World"; // 변수 선언 과 대입이 동시에 이루어진거.
-		System.out.println(문자열); // 변수 사용
-		문자열 = "문자열 변경";   // 값 변경
-		System.out.println(문자열); // 변수 사용
-		문자열 = "1234"; // 연산
-		System.out.println(문자열); // 변수 사용
+		System.out.println("蹂��닔 �떆�옉!");
+		String 臾몄옄�뿴 = "Hello World"; // 蹂��닔 �꽑�뼵 怨� ���엯�씠 �룞�떆�뿉 �씠猷⑥뼱吏꾧굅.
+		System.out.println(臾몄옄�뿴); // 蹂��닔 �궗�슜
+		臾몄옄�뿴 = "臾몄옄�뿴 蹂�寃�";   // 媛� 蹂�寃�
+		System.out.println(臾몄옄�뿴); // 蹂��닔 �궗�슜
+		臾몄옄�뿴 = "1234"; // �뿰�궛
+		System.out.println(臾몄옄�뿴); // 蹂��닔 �궗�슜
 		
-		int 정수 = 1;
-		System.out.println(정수);
+		int �젙�닔 = 1;
+		System.out.println(�젙�닔);
 		
-		String 결과값 = 문자열 + (정수 + 정수 + 정수);
-		System.out.println(결과값);
+		String 寃곌낵媛� = 臾몄옄�뿴 + (�젙�닔 + �젙�닔 + �젙�닔);
+		System.out.println(寃곌낵媛�);
 	}
 
 }
+*/
