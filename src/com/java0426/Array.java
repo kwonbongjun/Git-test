@@ -80,7 +80,7 @@ public class Array {
 				else if((i+d)%7==0) days[i][j]="일";
 				}
 				else {
-					days[i][j]="   ";
+					days[i][j]="";
 				}
 			System.out.print(days[i][j]);	
 			}
