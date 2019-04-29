@@ -379,7 +379,7 @@ public void t7() {
 		Scanner scan = new Scanner(System.in);
 		int aX = 1;
 		int aY = 1;
-		int bX = 1;
+		int bX = 1; 
 		int bY = 1;
 		t10(aX, aY, bX, bY); // 시작을 위하여 필요한 호출 부분
 		while(true) {
