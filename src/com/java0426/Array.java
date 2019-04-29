@@ -71,7 +71,6 @@ public class Array {
 		for(int i=0;i<days.length;i++) {
 			for(int j=0;j<days[i].length;j++) {
 				if(j*7+i<30) {
-					
 				if((i+d)%7==1) days[i][j]="월";
 				else if((i+d)%7==2) days[i][j]="화";
 				else if((i+d)%7==3) days[i][j]="수";
@@ -87,7 +86,7 @@ public class Array {
 			}
 			System.out.println();
 		}
-		System.out.println(days[(num-d)%7][(num-d)/7]);
+		System.out.println(days[(num-1)%7][(num-1)/7]);
 	}
 	
 	
