@@ -11,7 +11,7 @@ public class Main {
 		a.t3();
 		boolean result=a.t4(2,1,1,1);
 		System.out.println(result);
-		a.t11();
+		a.t13();
 	}
 
 }

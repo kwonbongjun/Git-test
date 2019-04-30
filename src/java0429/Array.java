@@ -416,6 +416,88 @@ public void t7() {
 				break;
 		}
 	}
+	
+	public int t14(int aX, int aY, int bX, int bY) {
+		int result = 0;
+		int[][] map = {
+				{0,0,0,0,0,0,0,0,0,0}, 
+				{0,1,0,1,1,1,1,1,1,0},
+				{0,1,0,1,0,0,1,0,1,0},
+				{0,1,0,2,0,1,1,0,1,0},
+				{0,1,0,0,0,1,1,0,1,0},
+				{0,1,0,1,0,0,0,0,1,0},
+				{0,1,1,1,1,1,1,1,1,0},
+				{0,1,1,0,0,1,0,0,1,0},
+				{0,1,1,0,0,1,1,1,1,0},
+				{0,0,0,0,0,0,0,0,0,0}
+		};
+		for(int y = 0; y < map.length; y++) { // 행
+			for(int x = 0; x < map[y].length; x++) { // 열
+				if(map[aY][aX] == 0) {
+					aY = bY; 
+					aX = bX;
+					result = 1;
+				}else if(map[aY][aX]==2) {
+					aX=1;
+					aY=1;
+					result =2;
+				}
+				if(y == aY && x == aX) {
+					System.out.print(" ㉿ ");
+				} else if(y==3 && x==3) {
+					System.out.print(" ♥ ");
+				}else if(map[y][x] == 1) {
+					System.out.print(" □ ");
+				} else {
+					System.out.print(" ■ ");
+				}
+			}
+			System.out.println();
+		}
+		return result;
+	}
+	
+	public void t15() {
+		Scanner scan = new Scanner(System.in);
+		int aX = 1;
+		int aY = 1;
+		int bX = 1; 
+		int bY = 1;
+		t10(aX, aY, bX, bY); // 시작을 위하여 필요한 호출 부분
+		while(true) {
+			String input = scan.next();
+			System.out.println(input.toUpperCase());
+			switch (input.toUpperCase()) {
+				case "W": // 위쪽
+					aY--;
+					break;
+				case "S": // 아래쪽
+					aY++;
+					break;
+				case "A": // 왼쪽
+					aX--;
+					break;
+				case "D": // 오른쪽
+					aX++;
+					break;
+				default:
+					break;
+			}
+			System.out.println(aY + ", " + aX + ", " + bY + ", " + bX);
+			if(t10(aX, aY, bX, bY)==1) { // 이동을 위하여 호출 부분
+				aX = bX;
+				aY = bY;
+			}else if(t10(aX,aY,bX,bY)==2) {
+				aX=1;
+				aY=1;
+			}else {
+				bX = aX;
+				bY = aY;
+			}
+			if(aX==8 && aY==8) 
+				break;
+		}
+	}
 }
 
 
